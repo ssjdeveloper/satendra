@@ -11,19 +11,23 @@
   <body>
     <div id="header">
       <div class="container">
-        <nav>
+        <nav >
+          
           <div><label>S</label>atendra</div>
-          <ul>
+          <!-- <img src="/images/background.png" alt=""> -->
+          <ul id="sidemenu">
             <li><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Portfolio</a></li>
             <li><a href="#">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
           </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
-        <!-- <img src="/images/bg.png" alt=""> -->
+       
         <div class="header-text">
-          <p>Full Stack Web/App Developer</p>
+          <p>Full Stack Developer</p>
           <h1>Hi, I`m <span>Satendra</span> <br />From Morena, MP</h1>
         </div>
       </div>
@@ -33,19 +37,12 @@
       <div class="container">
         <div class="row">
           <div class="about-col-1">
-            <img src="/images/profile-pic.jpeg" alt="" />
+            <img src="/images/user.png" alt="" />
           </div>
           <div class="about-col-2">
             <h1 class="sub-title">About Me</h1>
             <p>
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi
-              accusamus ut perspiciatis quo dignissimos quaerat neque maiores
-              labore est eos dicta temporibus unde molestias, consequuntur quos?
-              Reprehenderit consectetur laborum dolor, sunt ut dolores nulla,
-              voluptatem dolore iste sint cumque ab voluptates voluptatum soluta
-              consequatur quam, ex eos! Delectus perferendis velit sequi fugiat
-              dicta, id impedit aspernatur ratione perspiciatis dolorem
-              repellat.
+              I have been recently exposed to the world of IT and worked hard to gather knowledge on Algorithms and data structure, JavaScript and React. Seeking to utilize my skill and knowledge to thrive as a Web developer and learn many more thing in the coming days and become a successful developer.
             </p>
             <div class="tab-titles">
               <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
@@ -162,7 +159,40 @@
                     </div>
                 </div>
             </div>
+            <a href="#" class="btn">See more</a>
         </div>
+    </div>
+
+    <!-- --------------------contect------------------------ -->
+
+    <div id="contect">
+      <div class="container">
+        <div class="row">
+          <div class="contect-left">
+            <h1 class="sub-title">Contect Me</h1>
+            <p> <i class="fa-solid fa-paper-plane"></i> contect@example.com</p>
+            <p> <i class="fa-solid fa-square-phone"></i> 0123456789</p>
+            <div class="social-icons">
+              <a href=""><i class="fa-brands fa-facebook"></i></a>
+              <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+              <a href=""><i class="fa-brands fa-instagram"></i></a>
+              <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="/images/my-cv.pdf" download="" class="btn btn2">Download CV</a>
+          </div>
+          <div class="contect-right">
+            <form action="">
+              <input type="text" name="Name" placeholder="Your Name" required>
+              <input type="email" name="email" placeholder="Your Email" required>
+              <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright © Satendra. Made with <i class="fa-solid fa-heart"></i> by SSJDEVELOPER</p>
+      </div>
     </div>
 
     <script src="app.js"></script>
