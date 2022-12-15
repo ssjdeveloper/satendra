@@ -1,30 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Satendra Personal Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/6bac9ce8dd.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
     <div id="header">
-        <div class="container">
-            <nav>
-                <img src="images/logo.png" class="logo">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </nav>
+      <div class="container">
+        <nav>
+          <div><label>S</label>atendra</div>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Portfolio</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <!-- <img src="/images/bg.png" alt=""> -->
+        <div class="header-text">
+          <p>Full Stack Web/App Developer</p>
+          <h1>Hi, I`m <span>Satendra</span> <br />From Morena, MP</h1>
         </div>
-
+      </div>
     </div>
-    
+    <!-- --------------------about------------------ -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="/images/profile-pic.jpeg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi
+              accusamus ut perspiciatis quo dignissimos quaerat neque maiores
+              labore est eos dicta temporibus unde molestias, consequuntur quos?
+              Reprehenderit consectetur laborum dolor, sunt ut dolores nulla,
+              voluptatem dolore iste sint cumque ab voluptates voluptatum soluta
+              consequatur quam, ex eos! Delectus perferendis velit sequi fugiat
+              dicta, id impedit aspernatur ratione perspiciatis dolorem
+              repellat.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-links" onclick="opentab('skills')">Skills</p>
+              <p class="tab-links" onclick="opentab('experience')">Experience</p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>
+                  <span>Software Development</span><br />
+                  Full Stack web app Development.
+                </li>
+                <li>
+                  <span>Web Development</span><br />
+                  web app Desining, Development.
+                </li>
+                <li>
+                  <span>App Development</span><br />
+                  Building Android apps.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                  <li>
+                    <span>2021 - Current</span><br />
+                    Institut Rank 1 on Geeks For Geeks on Coding Contest.
+                  </li>
+                <li>
+                  <span>2021 - 2022</span><br />
+                  Inter at Newton School As a Full Stack Web Developer.
+                </li>
+                <li>
+                  <span>2022 - Current</span><br />
+                  2 &#9733 Coder on Codechef in Comptetive programing.
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                  <li>
+                      <span>2021 - 2022</span><br />
+                    One year cirtification cource in Newton School as a Full Stack Web Developer.
+                  </li>
+                <li>
+                  <span>2019 - Current</span><br />
+                  Pursuing B Tech From Shri Ram College Engineering & Management Banmor.
+                </li>
+                <li>
+                  <span>2019 - 2022</span><br />
+                  BA From Shri Ram Colloge porsa in distance Education.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- --------------------------services----------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Developer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sapiente, amet officiis iure aperiam voluptas beatae libero blanditiis similique aspernatur ex pariatur quia? Nam et praesentium enim quod, quasi laborum?\</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Web desinger</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sapiente, amet officiis iure aperiam voluptas beatae libero blanditiis similique aspernatur ex pariatur quia? Nam et praesentium enim quod, quasi laborum?\</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Developer</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus sapiente, amet officiis iure aperiam voluptas beatae libero blanditiis similique aspernatur ex pariatur quia? Nam et praesentium enim quod, quasi laborum?\</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------------------------portfolio---------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="/images/work-1.png" >
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eos quidem dolorem.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/images/work-2.png" >
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eos quidem dolorem.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="/images/work-3.png" >
+                    <div class="layer">
+                        <h3>Online Soping App</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis eos quidem dolorem.</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="app.js"></script>
-</body>
+  </body>
 </html>
