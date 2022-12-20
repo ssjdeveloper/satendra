@@ -458,23 +458,19 @@ nav .fa-solid{
         margin-right: 20px;
     }
 
-    /* #services{
-        margin: 20px;
-    }
-
-    #portfolio{
-        margin: 20px; */
-    /* } */
+   
     
     .contect-left, .contect-right{
         flex-basis: 100%;
-        /* margin: 20px; */
+       
       
     }
 
     .copyright{
         font-size: 13px;
     }
+
+    
 }
 
 #msg{
